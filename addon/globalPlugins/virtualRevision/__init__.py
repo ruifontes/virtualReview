@@ -1,11 +1,9 @@
 # Virtual Revision NVDA plugin
-# Version 0.2
 #Copyright (C) 2012 Rui Batista <ruiandrebatista@gmail.com>
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
 import wx
-
 import api
 import globalPluginHandler
 import gui
@@ -13,14 +11,12 @@ import textInfos
 import addonHandler
 addonHandler.initTranslation()
 
-
-
 virtualWindowViewer = None
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_virtualWindowReview(self, nextHandler):
-		# Find the first focus ansestor that have any display text, according to the display model
+		# Find the first focus ancestor that have any display text, according to the display model
 		# This must be the root application window, or something close to that.
 		text = None
 		root = None
@@ -73,15 +69,14 @@ class VirtualWindowViewer(wx.Frame):
 def activate():
 	"""Activate the virtual window viewer.
 	If the virtual window viewer has not already been created and opened, this will create and open it.
-	Otherwise, it will be brought to the foreground if possible.
-	"""
+	Otherwise, it will be brought to the foreground if possible."""
 	global virtualWindowViewer
 	if not virtualWindowViewer:
 		virtualWindowViewer = VirtualWindowViewer(gui.mainFrame)
 	virtualWindowViewer.Raise()
-	# There is a MAXIMIZE style which can be used on the frame at construction, but it doesn't seem to work the first time it is shown,
-	# probably because it was in the background.
-	# Therefore, explicitly maximise it here.
-	# This also ensures that it will be maximized whenever it is activated, even if the user restored/minimised it.
+	"""There is a MAXIMIZE style which can be used on the frame at construction, but it doesn't seem to work the first time it is shown,
+	probably because it was in the background.
+	Therefore, explicitly maximise it here.
+	This also ensures that it will be maximized whenever it is activated, even if the user restored/minimised it."""
 	virtualWindowViewer.Maximize()
 	virtualWindowViewer.Show()
