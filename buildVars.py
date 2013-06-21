@@ -8,7 +8,7 @@ _ = lambda x : x
 
 addon_info = {
 	# add-on Name
-	"addon-name" : "VirtualRevision",
+	"addon-name" : "virtualRevision",
 	# Add-on description
 	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 	"addon-summary" : _("Virtual Revision"),
@@ -16,7 +16,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on installation and add-on information
 	"addon-description" : _("Press nvda+control+w to get a Simple review of the current window's text."),
 	# version
-	"addon-version" : "1.2.1def",
+	"addon-version" : "1.2.1dev",
 	# Author(s)
 	"addon-author" : "Rui Batista <ruiandrebatista@gmail.com>",
 	# URL for the add-on documentation support

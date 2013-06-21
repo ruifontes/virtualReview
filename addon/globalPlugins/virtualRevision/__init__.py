@@ -74,9 +74,9 @@ def activate():
 	if not virtualWindowViewer:
 		virtualWindowViewer = VirtualWindowViewer(gui.mainFrame)
 	virtualWindowViewer.Raise()
-	"""There is a MAXIMIZE style which can be used on the frame at construction, but it doesn't seem to work the first time it is shown,
-	probably because it was in the background.
-	Therefore, explicitly maximise it here.
-	This also ensures that it will be maximized whenever it is activated, even if the user restored/minimised it."""
+	# There is a MAXIMIZE style which can be used on the frame at construction, but it doesn't seem to work the first time it is shown,
+	# probably because it was in the background.
+	# Therefore, explicitly maximise it here.
+	# This also ensures that it will be maximized whenever it is activated, even if the user restored/minimised it.
 	virtualWindowViewer.Maximize()
 	virtualWindowViewer.Show()
