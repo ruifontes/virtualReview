@@ -16,11 +16,11 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on installation and add-on information
 	"addon-description" : _("Press nvda+control+w to get a Simple review of the current window's text."),
 	# version
-	"addon-version" : "1.2.1dev",
+	"addon-version" : "1.3-dev",
 	# Author(s)
 	"addon-author" : "Rui Batista <ruiandrebatista@gmail.com>",
 	# URL for the add-on documentation support
-	"addon-url" : None
+    "addon-url" : "http://addons.nvda-project.org"
 }
 
 
