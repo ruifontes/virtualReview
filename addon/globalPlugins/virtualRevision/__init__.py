@@ -34,6 +34,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if text:
 			activate()
 			virtualWindowViewer.outputCtrl.SetValue(text)
+	# Translators: Message presented in input help mode.
 	script_virtualWindowReview.__doc__ = _("Opens a dialog containing the text of the currently focused window for easy review.")
 
 	__gestures = {"kb:nvda+control+w" : "virtualWindowReview"}
