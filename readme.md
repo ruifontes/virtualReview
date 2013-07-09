@@ -9,7 +9,11 @@ This Addon allows NVDA users to review a Window content in a text box, similar t
 
 Press nvda+control+w to open the virtual revision Window. Then simply navigate the shown textbox as you do in any other text content.
 
+After that, you can press Escape to close the virtual revision window.
+
 ## Changes for 1.3-dev ##
+
+* Updated documentation: Added information about closing the virtual revision window.
 
 ## Changes for 1.2 ##
 
