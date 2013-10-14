@@ -11,6 +11,8 @@ Press nvda+control+w to open the virtual revision Window. Then simply navigate t
 
 ## Changes for 1.3-dev ##
 
+* Translations added.
+
 ## Changes for 1.2 ##
 
 * Support virtualizing of console windows
