@@ -17,9 +17,9 @@ except:
 
 virtualWindowViewer = None
 
-	class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
-scriptCategory = SCRCAT_TOOLS
+	scriptCategory = SCRCAT_TOOLS
 
 	def script_virtualWindowReview(self, nextHandler):
 		# Find the first focus ancestor that have any display text, according to the display model
