@@ -13,7 +13,7 @@ addonHandler.initTranslation()
 
 try:	from globalCommands import SCRCAT_TOOLS
 except:
-	SCRCAT_CONFIG = None
+	SCRCAT_TOOLS = None
 
 virtualWindowViewer = None
 
