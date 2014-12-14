@@ -9,17 +9,13 @@ import globalPluginHandler
 import gui
 import textInfos
 import addonHandler
-addonHandler.initTranslation()
+import sys
 
-try:	from globalCommands import SCRCAT_TOOLS
-except:
-	SCRCAT_TOOLS = None
+addonHandler.initTranslation()
 
 virtualWindowViewer = None
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
-	scriptCategory = SCRCAT_TOOLS
 
 	def script_virtualWindowReview(self, nextHandler):
 		# Find the first focus ancestor that have any display text, according to the display model
@@ -31,18 +27,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				root = ancestor
 				break
 		if root:
-			text = root.displayText.replace("\0", ' ')
+			info = root.makeTextInfo(textInfos.POSITION_FIRST)
+			info.move(textInfos.UNIT_LINE, sys.maxint, endPoint="end")
+			text = info.clipboardText.replace("\0", " ")
 		obj = api.getFocusObject()
 		if obj.windowClassName == u'ConsoleWindowClass':
 			info = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			info.expand(textInfos.UNIT_STORY)
-			text = info.clipboardText
+			text = info.clipboardText.rstrip()
 		if text:
 			activate()
 			virtualWindowViewer.outputCtrl.SetValue(text)
 	script_virtualWindowReview.__doc__ = _("Opens a dialog containing the text of the currently focused window for easy review.")
 
-	__gestures = {"kb:nvda+control+w" : "virtualWindowReview"}
+	__gestures = {
+		"kb:nvda+control+w" : "virtualWindowReview"
+	}
 
 class VirtualWindowViewer(wx.Frame):
 	""" Virtual Window viewer GUI.
