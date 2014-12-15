@@ -13,9 +13,16 @@ import sys
 
 addonHandler.initTranslation()
 
+try:
+	from globalCommands import SCRCAT_TEXTREVIEW
+except:
+	SCRCAT_TEXTREVIEW = None
+
 virtualWindowViewer = None
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+
+	scriptCategory = SCRCAT_TEXTREVIEW
 
 	def script_virtualWindowReview(self, nextHandler):
 		# Find the first focus ancestor that have any display text, according to the display model
