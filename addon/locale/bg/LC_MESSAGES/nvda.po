@@ -18,7 +18,6 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Message presented in input help mode.
-#: addon/globalPlugins/virtualRevision/__init__.py:38
 msgid ""
 "Opens a dialog containing the text of the currently focused window for easy "
 "review."
@@ -28,13 +27,11 @@ msgstr ""
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-#: addon/globalPlugins/virtualRevision/__init__.py:47 buildVars.py:14
 msgid "Virtual Revision"
 msgstr "Виртуален Преглед"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
-#: buildVars.py:17
 msgid ""
 "Press nvda+control+w to get a Simple review of the current window's text."
 msgstr ""
@@ -42,7 +39,6 @@ msgstr ""
 "от текущия прозорец."
 
 #. Translators: Tooltip for an addon menu item.
-#: docHandler.py:60
 #, python-format
 msgid "Opens documentation for %s"
 msgstr "Отваря помощната документация за %s"

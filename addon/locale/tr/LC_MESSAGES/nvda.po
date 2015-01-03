@@ -17,7 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: addon/globalPlugins/virtualRevision/__init__.py:37
 msgid ""
 "Opens a dialog containing the text of the currently focused window for easy "
 "review."
@@ -26,13 +25,11 @@ msgstr ""
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-#: addon/globalPlugins/virtualRevision/__init__.py:46 buildVars.py:14
 msgid "Virtual Revision"
 msgstr "Virtual Revision"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
-#: buildVars.py:17
 msgid ""
 "Press nvda+control+w to get a Simple review of the current window's text."
 msgstr ""
@@ -40,7 +37,6 @@ msgstr ""
 "basın"
 
 #. Translators: Tooltip for an addon menu item.
-#: docHandler.py:60
 #, python-format
 msgid "Opens documentation for %s"
 msgstr "%s için dokümantasyonu açar"
