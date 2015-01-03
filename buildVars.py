@@ -15,7 +15,7 @@ addon_info = {
 	"addon_summary" : _("Virtual Revision"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("Press nvda+control+w to get a Simple review of the current window's text."),
+	"addon_description" : _("Provides a simple reviewable dialog of the text of the currently focused window."),
 	# version
 	"addon_version" : "1.4-dev",
 	# Author(s)
