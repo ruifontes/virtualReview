@@ -31,4 +31,4 @@ You can press Escape to close the virtual revision window.
 
 * Initial Release
 
-[1]: http://addons.nvda-project.org/files/get.php?file=vr-dev
+[1]: http://addons.nvda-project.org/files/get.php?file=VR
