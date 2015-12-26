@@ -62,7 +62,7 @@ class VirtualWindowViewer(wx.Frame):
 		self.Bind(wx.EVT_CLOSE, self.onClose)
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		self.outputCtrl = wx.TextCtrl(self, wx.ID_ANY, size=(500, 500), style=wx.TE_MULTILINE | wx.TE_READONLY|wx.TE_RICH)
-		self.outputCtrl.Bind(wx.EVT_CHAR, self.onOutputChar)
+		self.outputCtrl.Bind(wx.EVT_KEY_DOWN, self.onOutputChar)
 		mainSizer.Add(self.outputCtrl, proportion=1, flag=wx.EXPAND)
 		self.SetSizer(mainSizer)
 		mainSizer.Fit(self)
