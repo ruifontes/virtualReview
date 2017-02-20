@@ -69,7 +69,9 @@ class VirtualWindowViewer(wx.Frame):
 		self.outputCtrl.SetFocus()
 
 	def onActivate(self, evt):
-		pass
+		if evt.GetActive(): 
+			pass 
+		evt.Skip() 
 
 	def onClose(self, evt):
 		self.Destroy()
