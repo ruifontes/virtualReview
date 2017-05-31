@@ -12,7 +12,7 @@ addon_info = {
 	"addon_name" : "virtualRevision",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
-	"addon_summary" : _("Virtual Revision"),
+	"addon_summary" : _("Virtual Review"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("Provides a simple reviewable dialog of the text of the currently focused window."),
@@ -21,7 +21,7 @@ addon_info = {
 	# Author(s)
 	"addon_author" : "Rui Batista <ruiandrebatista@gmail.com> and NVDA Addon Team",
 	# URL for the add-on documentation support
-	"addon_url" : "http://addons.nvda-project.org",
+	"addon_url" : "https://addons.nvda-project.org",
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
 }
