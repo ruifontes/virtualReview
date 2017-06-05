@@ -17,6 +17,7 @@ You can press Escape to close the virtual revision window.
 
 * New name: Virtual Review.
 * Due to changes in how content is shown, NVDA 2015.2 or later is required.
+* Thanks to new features in 2015.2 and later, you can now find text in virtualized windows.
 * Fixed the add-on functionality with non-console window.
 * Removed useless blank lines at bottom of virtualized console window.
 * Some minor adjustments.
