@@ -16,6 +16,32 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = None
 
+def obtainUWPWindowText():
+	foreground = api.getForegroundObject()
+	desktop = api.getDesktopObject()
+	uwpTextList = [foreground.name]
+	curObject=foreground.firstChild
+	while curObject.simpleParent != desktop:
+		if curObject.name is not None: uwpTextList.append(curObject.name)
+		if curObject.simpleFirstChild:
+			curObject=curObject.simpleFirstChild
+			continue
+		if curObject.simpleNext:
+			curObject=curObject.simpleNext
+			continue
+		if curObject.simpleParent:
+			parent=curObject.simpleParent
+			while parent and not parent.simpleNext:
+				parent=parent.simpleParent
+			# As long as one is on current foreground object...
+			#Stay within the current top-level window.
+			# But sometimes, the top-level window has now sibling at all (such is the case in Windows 10 Start menu).
+			try:
+				curObject=parent.simpleNext
+			except AttributeError:
+				continue
+	return uwpTextList
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -23,21 +49,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_virtualWindowReview(self, gesture):
 		# Find the first focus ancestor that have any display text, according to the display model
 		# This must be the root application window, or something close to that.
+		# In case of universal apps, traverse child elements.
 		text = None
-		root = None
-		for ancestor in api.getFocusAncestors():
-			if ancestor.appModule and ancestor.displayText:
-				root = ancestor
-				break
-		if root:
-			info = root.makeTextInfo(textInfos.POSITION_FIRST)
-			info.move(textInfos.UNIT_LINE, sys.maxint, endPoint="end")
-			text = info.clipboardText.replace("\0", " ")
 		obj = api.getFocusObject()
-		if obj.windowClassName == u'ConsoleWindowClass':
-			info = obj.makeTextInfo(textInfos.POSITION_FIRST)
-			info.expand(textInfos.UNIT_STORY)
-			text = info.clipboardText.rstrip()
+		# Because it may take a while to iterate through elements, play abeep to alert users of this fact and the fact it's a UWP screen.
+		if obj.windowClassName.startswith("Windows.UI.Core"):
+			import tones
+			tones.beep(400, 300)
+			text = "\n".join(obtainUWPWindowText())
+			tones.beep(400, 50)
+		else:
+			root = None
+			for ancestor in api.getFocusAncestors():
+				if ancestor.appModule and ancestor.displayText:
+					root = ancestor
+					break
+			if root:
+				info = root.makeTextInfo(textInfos.POSITION_FIRST)
+				info.move(textInfos.UNIT_LINE, sys.maxint, endPoint="end")
+				text = info.clipboardText.replace("\0", " ")
+			if obj.windowClassName == u'ConsoleWindowClass':
+				info = obj.makeTextInfo(textInfos.POSITION_FIRST)
+				info.expand(textInfos.UNIT_STORY)
+				text = info.clipboardText.rstrip()
 		if text:
 			# Translators: Title of the window shown for reading text on screen via a window.
 			ui.browseableMessage(text, title=_("Virtual review"))
