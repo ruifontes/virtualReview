@@ -74,7 +74,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				text = info.clipboardText.rstrip()
 		if text:
 			# Translators: Title of the window shown for reading text on screen via a window.
-			ui.browseableMessage(text, title=_("Virtual review"))
+			ui.browseableMessage(text, title=_("Virtual review: {screenName}").format(screenName = api.getForegroundObject().name))
 		else:
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
