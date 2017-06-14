@@ -16,8 +16,6 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = None
 
-virtualWindowViewer = None
-
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
