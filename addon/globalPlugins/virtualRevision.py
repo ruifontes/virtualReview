@@ -21,7 +21,7 @@ def obtainUWPWindowText():
 	desktop = api.getDesktopObject()
 	uwpTextList = [foreground.name]
 	curObject=foreground.firstChild
-	while curObject.simpleParent != desktop:
+	while curObject:
 		if curObject.name is not None: uwpTextList.append(curObject.name)
 		if curObject.simpleFirstChild:
 			curObject=curObject.simpleFirstChild
@@ -31,11 +31,13 @@ def obtainUWPWindowText():
 			continue
 		if curObject.simpleParent:
 			parent=curObject.simpleParent
-			while parent and not parent.simpleNext:
-				parent=parent.simpleParent
 			# As long as one is on current foreground object...
 			#Stay within the current top-level window.
-			# But sometimes, the top-level window has now sibling at all (such is the case in Windows 10 Start menu).
+			if parent.simpleParent == desktop:
+				break
+			while parent and not parent.simpleNext:
+				parent=parent.simpleParent
+			# But sometimes, the top-level window has no sibling at all (such is the case in Windows 10 Start menu).
 			try:
 				curObject=parent.simpleNext
 			except AttributeError:
