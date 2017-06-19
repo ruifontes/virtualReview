@@ -13,6 +13,12 @@ Press NVDA+control+w to open the virtual revision Window.
 Then simply navigate the shown textbox as you do in any other text content.
 You can press Escape to close the virtual revision window.
 
+## Changes for 2.1
+
+* The title of the screen under virtual review will be included.
+* It is now possible to review contents of Universal Windows Platform (UWP) apps in Windows 10 and most modern apps in Windows 8.x.
+* When obtaining screen contents for modern and universal apps, a beep will be heard to indicate when the virtual review window is ready.
+
 ## Changes for 2.0
 
 * New name: Virtual Review.
