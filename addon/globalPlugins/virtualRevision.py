@@ -75,8 +75,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				info.expand(textInfos.UNIT_STORY)
 				text = info.clipboardText.rstrip()
 		if text:
+			name = api.getForegroundObject().name
+			if name in (None, ""):
+				# Translators: The title of the virtual review window when the foreground window has no name, commonly seen when all windows are minimized.
+				name = _("No title")
 			# Translators: Title of the window shown for reading text on screen via a window.
-			ui.browseableMessage(text, title=_("Virtual review: {screenName}").format(screenName = api.getForegroundObject().name))
+			ui.browseableMessage(text, title=_("Virtual review: {screenName}").format(screenName = name))
 		else:
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
