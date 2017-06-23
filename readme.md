@@ -13,6 +13,10 @@ Press NVDA+control+w to open the virtual revision Window.
 Then simply navigate the shown textbox as you do in any other text content.
 You can press Escape to close the virtual revision window.
 
+## Changes for 2.2
+
+* When windows are minimized or if the foreground window has no title, NVDA will record this fact when displaying virtual review window.
+
 ## Changes for 2.1
 
 * The title of the screen under virtual review will be included.
