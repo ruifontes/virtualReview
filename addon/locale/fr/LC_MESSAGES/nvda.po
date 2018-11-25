@@ -5,39 +5,58 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: virtualRevision 1.3-dev\n"
+"Project-Id-Version: virtualRevision 2.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-07-08 08:53+0200\n"
-"PO-Revision-Date: 2013-07-15 09:58+0100\n"
-"Last-Translator: Michel Such <michel.such@free.fr>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-26 14:51+0100\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.8.12\n"
 
+#. Translators: The title of the virtual review window when the foreground window has no name, commonly seen when all windows are minimized.
+msgid "No title"
+msgstr "Pas de titre"
+
+#. Translators: Title of the window shown for reading text on screen via a window.
+#, python-brace-format
+msgid "Virtual review: {screenName}"
+msgstr "Révision virtuelle : {screenName}"
+
+#. Translator: Message shown when no text can be virtualized.
+msgid "No text to display"
+msgstr "Aucun texte à afficher"
+
+#. Translators: Message presented in input help mode.
 msgid ""
-"Opens a dialog containing the text of the currently focused window for easy "
+"Opens a window containing the text of the currently focused window for easy "
 "review."
 msgstr ""
 "Ouvre un dialogue contenant le texte de la fenêtre actuellement en avant-"
-"plan pour en faciliter la revue."
+"plan pour en faciliter la révision."
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Virtual Review"
+msgstr "Révision Virtuelle"
 
 #. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-msgid "Virtual Revision"
-msgstr "Revue Virtuelle"
-
-#. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
-"Press nvda+control+w to get a Simple review of the current window's text."
+"Provides a simple reviewable dialog of the text of the currently focused "
+"window."
 msgstr ""
-"Pressez nvda+control+w pour obtenir une vue simplifiée du texte de la "
-"fenêtre courante."
+"Fournit un simple dialogue visualisable contenant le texte de la fenêtre "
+"actuellement en avant-plan."
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Ouvre la documentation de %s"
+#~ msgid ""
+#~ "Press nvda+control+w to get a Simple review of the current window's text."
+#~ msgstr ""
+#~ "Appuyer sur nvda+contrôle+w pour obtenir une vue simplifiée du texte de "
+#~ "la fenêtre courante."
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Ouvre la documentation de %s"

@@ -1,58 +1,51 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the virtualRevision package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: virtualRevision 1.3-dev\n"
+"Project-Id-Version: virtualRevision 2.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-07-08 08:53+0200\n"
-"PO-Revision-Date: 2018-06-24 03:19+0200\n"
-"Last-Translator: René Linke <rene.linke@hamburg.de>\n"
-"Language: de\n"
+"POT-Creation-Date: 2018-01-26 03:16+1000\n"
+"PO-Revision-Date: 2018-07-07 23:33+0300\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
 
 #. Translators: The title of the virtual review window when the foreground window has no name, commonly seen when all windows are minimized.
 msgid "No title"
-msgstr "Kein Fenstertitel"
+msgstr "Nėra pavadinimo"
 
 #. Translators: Title of the window shown for reading text on screen via a window.
+#, python-brace-format
 msgid "Virtual review: {screenName}"
-msgstr "Virtuelle Ansicht: {screenName}"
+msgstr "Virtuali peržiūra: {screenName}"
 
 #. Translator: Message shown when no text can be virtualized.
 msgid "No text to display"
-msgstr "Kein Text zum Anzeigen gefunden."
+msgstr "Nėra peržiūrimo teksto"
 
 #. Translators: Message presented in input help mode.
 msgid ""
 "Opens a window containing the text of the currently focused window for easy "
 "review."
 msgstr ""
-"Öffnet einen Dialog, der den Text des aktuell fokusierten Fensters enthält."
+"Atveria langą, kuriame galima peržiūrėti židinyje esančio lango tekstą."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Virtual Review"
-msgstr "Virtuelle Ansicht"
+msgstr "Virtuali peržiūra"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "Provides a simple reviewable dialog of the text of the currently focused "
 "window."
-msgstr "Öffnet einen Dialog, der den Text des aktuellen Fensters enthält."
-
-#~ msgid ""
-#~ "Press nvda+control+w to get a Simple review of the current window's text."
-#~ msgstr ""
-#~ "Drücken Sie NVDA+Strg+W, um eine vereinfachte Darstellung des aktuellen "
-#~ "Navigatorobjekts zu erhalten."
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "Dokumentation für %s öffnen"
+msgstr ""
+"Paruošia paprastą peržiūros dialogo langą su židinyje esančio lango tekstu."

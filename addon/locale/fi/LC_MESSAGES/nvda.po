@@ -5,38 +5,59 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: virtualRevision 1.3-dev\n"
+"Project-Id-Version: Virtual Review\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-07-08 08:53+0200\n"
-"PO-Revision-Date: 2013-07-08 14:38+0200\n"
-"Last-Translator: Jani Kinnunen\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-01-26 07:47+0200\n"
+"Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
+"Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
+#. Translators: The title of the virtual review window when the foreground window has no name, commonly seen when all windows are minimized.
+msgid "No title"
+msgstr "Ei nimeä"
+
+#. Translators: Title of the window shown for reading text on screen via a window.
+#, python-brace-format
+msgid "Virtual review: {screenName}"
+msgstr "Virtuaalitarkastelu: {screenName}"
+
+#. Translator: Message shown when no text can be virtualized.
+msgid "No text to display"
+msgstr "Ei näytettävää tekstiä"
+
+#. Translators: Message presented in input help mode.
 msgid ""
-"Opens a dialog containing the text of the currently focused window for easy "
+"Opens a window containing the text of the currently focused window for easy "
 "review."
 msgstr ""
-"Avaa valintaikkunan, jossa voidaan tarkastella aktiivisen ikkunan sisältämää "
+"Avaa ikkunan, jossa voidaan tarkastella aktiivisen sovelluksen sisältämää "
 "tekstiä."
 
-#. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-msgid "Virtual Revision"
-msgstr "Ikkunan virtualisointi"
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Virtual Review"
+msgstr "Virtuaalitarkastelu"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
-"Press nvda+control+w to get a Simple review of the current window's text."
+"Provides a simple reviewable dialog of the text of the currently focused "
+"window."
 msgstr ""
-"Paina NVDA+Ctrl+W tarkastellaksesi aktiivisen ikkunan sisältämää tekstiä."
+"Tarjoaa nykyisen ikkunan sisältämän tekstin yksinkertaisessa "
+"tarkasteltavassa valintaikkunassa."
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Avaa %s -lisäosan ohjeen"
+#~ msgid ""
+#~ "Press nvda+control+w to get a Simple review of the current window's text."
+#~ msgstr ""
+#~ "Paina NVDA+Ctrl+W tarkastellaksesi aktiivisen ikkunan sisältämää tekstiä."
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Avaa %s -lisäosan ohjeen"
