@@ -1,9 +1,8 @@
 # Virtual Revision NVDA plugin
-#Copyright (C) 2012-2017 Rui Batista and contributors
+#Copyright (C) 2012-2019 Rui Batista and contributors
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
-import sys
 import globalPluginHandler
 import api
 import textInfos
@@ -68,7 +67,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					break
 			if root:
 				info = root.makeTextInfo(textInfos.POSITION_FIRST)
-				info.move(textInfos.UNIT_LINE, sys.maxint, endPoint="end")
+				# sys.maxint is gone in Python 3 as integer bit width can grow arbitrarily.
+				# Use the static value (0x7fffffff or (2^31)-1) directly.
+				info.move(textInfos.UNIT_LINE, 0x7fffffff, endPoint="end")
 				text = info.clipboardText.replace("\0", " ")
 			if obj.windowClassName == u'ConsoleWindowClass':
 				info = obj.makeTextInfo(textInfos.POSITION_FIRST)
