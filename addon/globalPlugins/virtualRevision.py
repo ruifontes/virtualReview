@@ -7,6 +7,7 @@ import globalPluginHandler
 import api
 import textInfos
 import ui
+import scriptHandler
 import addonHandler
 addonHandler.initTranslation()
 
@@ -47,6 +48,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
 
+	@scriptHandler.script(
+		# Translators: Message presented in input help mode.
+		description=_("Opens a window containing the text of the currently focused window for easy review."),
+		gesture="kb:nvda+control+w"
+	)
 	def script_virtualWindowReview(self, gesture):
 		# Find the first focus ancestor that have any display text, according to the display model
 		# This must be the root application window, or something close to that.
@@ -85,9 +91,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
-	# Translators: Message presented in input help mode.
-	script_virtualWindowReview.__doc__ = _("Opens a window containing the text of the currently focused window for easy review.")
 
-	__gestures = {
-		"kb:nvda+control+w" : "virtualWindowReview"
-	}
+	__gestures = {}
