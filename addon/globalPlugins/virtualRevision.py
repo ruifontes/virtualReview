@@ -1,9 +1,11 @@
 # Virtual Revision NVDA plugin
 #Copyright (C) 2012-2020 Rui Batista and contributors
+#Copyright (C) 2021-2022 Rui Fontes, Rui Batista and contributors
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
 import globalPluginHandler
+import globalVars
 import api
 import textInfos
 import ui
@@ -92,4 +94,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
 
-	__gestures = {}
+	#__gestures = {}
+
+# Avoid use on secure screens
+if globalVars.appArgs.secure:
+	# Override the global plugin to disable it.
+	GlobalPlugin = globalPluginHandler.GlobalPlugin

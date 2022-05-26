@@ -17,17 +17,17 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("Provides a simple reviewable dialog of the text of the currently focused window."),
 	# version
-	"addon_version" : "21.06",
+	"addon_version" : "2022.05",
 	# Author(s)
-	"addon_author" : "Rui Batista <ruiandrebatista@gmail.com> and NVDA Addon Team",
+	"addon_author" : "Rui Fontes <rui.fontes@tiflotecnia.com>, Rui Batista <ruiandrebatista@gmail.com> and NVDA Addon Team",
 	# URL for the add-on documentation support
-	"addon_url" : "https://addons.nvda-project.org",
+	"addon_url" : "https://github.com/ruifontes/virtualreview",
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
 	# Minimum NVDA version supported
 	"addon_minimumNVDAVersion" : "2019.3",
 	# Last NVDA version supported/tested
-	"addon_lastTestedNVDAVersion" : "2021.1",
+	"addon_lastTestedNVDAVersion" : "2022.1",
 	# Add-on update channel (default is stable)
 	"addon_updateChannel" : None,
 }
