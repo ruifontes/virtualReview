@@ -2,7 +2,6 @@
 
 * نویسندگان: Rui Batista و گروه افزونه‌های NVDA
 * دانلود [نسخه‌ی پایدار][1]
-* دانلود [نسخه‌ی در دست توسعه][2]
 
 این افزونه به کاربران NVDA اجازه میدهد تا محتوای یک پنجره را داخل یک کادر
 متنی بازبینی کنند، همانند امکانِ مجازی‌سازی پنجره‌ها در صفحه‌خوان
@@ -59,6 +58,4 @@ NVDA نمیشود.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

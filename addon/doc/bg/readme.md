@@ -2,7 +2,6 @@
 
 * Автори: Rui Batista и екипа за добавки за NVDA
 * Изтегляне на [стабилна версия][1]
-* Изтегляне на [тестова версия][2]
 
 Тази добавка позволява на потребителите на NVDA да прегледат съдържанието на
 текущия прозорец в текстово поле, подобно на виртуализацията на прозорците в
@@ -60,6 +59,5 @@ JAWS за Windows. Имайте предвид, че това е просто у
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon
 
-[2]: https://addons.nvda-project.org/files/get.php?file=VR

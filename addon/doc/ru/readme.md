@@ -2,7 +2,6 @@
 
 * Авторы: Rui Batista и Команда Дополнений NVDA
 * Загрузить [стабильную версию][1]
-* Загрузить [разрабатываемую версию][2]
 
 Это дополнение позволяет пользователям NVDA просматривать содержимое окна в
 текстовом поле, аналогично окну виртуального просмотра в JAWS для
@@ -54,8 +53,4 @@ Windows. Заметим, что это всего лишь удобство дл
 
 * Первый Публичный Релиз
 
-[[!tag dev stable]]
-
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

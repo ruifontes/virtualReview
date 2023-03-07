@@ -53,4 +53,4 @@ You can press Escape to close the virtual revision window.
 
 * Initial Release
 
-[1]: http://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

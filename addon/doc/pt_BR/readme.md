@@ -2,7 +2,7 @@
 
 * Autores: Rui Batista e time de complementos do NVDA
 * Baixe a [versão estável][1]
-* Baixe a [versão em desenvolvimento][2]
+* Compatibilidade com NVDA 2019.3  e seguintes
 
 Este complemento possibilita aos usuários do NVDA explorar o conteúdo duma
 janela numa caixa de texto, de modo similar à virtualização de janelas do
@@ -59,6 +59,4 @@ virtual.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

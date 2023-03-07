@@ -2,7 +2,6 @@
 
 * Authors: Rui Batista and NVDA Addon Team
 * Download [stable version][1]
-* Download [development version][2]
 
 This Addon allows NVDA users to review a Window content in a text box,
 similar to window virtualization of JAWS for Windows.  Note, however, that
@@ -55,6 +54,5 @@ prozor virtualne revizije.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon
 
-[2]: https://addons.nvda-project.org/files/get.php?file=VR

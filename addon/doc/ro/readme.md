@@ -2,7 +2,6 @@
 
 * Autori: Rui Batista și echipa de suplimente NVDA
 * Descărcați [versiunea stabilă][1]
-* Descărcați [versiunea în dezvoltare][2]
 
 Acest supliment le permite utilizatorilor NVDA să examineze un conținut de
 ferestre într-o casetă de text, similar cu virtualizarea ferestrei JAWS
@@ -59,6 +58,4 @@ de text. Puteți apăsa Escape pentru a închide fereastra virtual revision.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

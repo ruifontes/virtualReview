@@ -3,7 +3,6 @@
 * Auteurs : Rui Batista et l'équipe de la communauté des modules
   complémentaires NVDA
 * Télécharger [version stable ][1]
-* Télécharger [version de développement][2]
 
 Ce module permet aux utilisateurs de NVDA de révisez le contenu d'une
 fenêtre dans une zone de texte, de la même manière qu'avec la virtualisation
@@ -62,6 +61,4 @@ fermer la fenêtre de révision virtuelle.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon

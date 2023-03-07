@@ -1,9 +1,7 @@
 # Virtuelles Fenster #
 
 * * Autoren: Rui Batista und das Team für die NVDA-Erweiterungen
-  * Download: [Entwicklerversion 2.0-dev][1]
 * [Stabile Version herunterladen][1]
-* [Testversion herunterladen][2]
 
 Mit dieser Erweiterung können NVDA-Nutzer den Inhalt des aktuellen Fensters
 in einem Eingabefeld anzeigen lassen, ähnlich wie die Fenstervirtualisierung
@@ -61,6 +59,5 @@ navigieren. Drücken Sie Escape, um das Fenster zu schließen.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon
 
-[2]: https://addons.nvda-project.org/files/get.php?file=VR

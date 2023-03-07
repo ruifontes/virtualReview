@@ -2,7 +2,6 @@
 
 * * Autori: Rui Batista e la comunità dei componenti aggiuntivi per NVDA
 * Download [stable version][1]
-* Download [development version][2]
 
 Questo componente aggiuntivo permette di esaminare il testo della finestra
 corrente in un modo molto simile ad una funzionalità presente in Jaws, ossia
@@ -58,6 +57,4 @@ su/giù, per esaminarlo
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=VR
-
-[2]: https://addons.nvda-project.org/files/get.php?file=VR
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon
