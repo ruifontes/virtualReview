@@ -49,4 +49,4 @@ ostatných editačných poliach. Okno zavriete klávesom escape.
 
 * prvé vydanie
 
-[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.03/virtualRevision-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.09.19/virtualRevision-2023.09.19.nvda-addon

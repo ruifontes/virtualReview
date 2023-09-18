@@ -1,6 +1,6 @@
 # Virtual Revision NVDA plugin
 #Copyright (C) 2012-2020 Rui Batista and contributors
-#Copyright (C) 2021-2022 Rui Fontes, Rui Batista and contributors
+#Copyright (C) 2021-2023 Rui Fontes, Rui Batista and contributors
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
