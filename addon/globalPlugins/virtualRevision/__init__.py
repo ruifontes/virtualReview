@@ -7,16 +7,26 @@
 import globalPluginHandler
 import globalVars
 import api
+import config
+import NVDAObjects
 import textInfos
 import ui
+import UIAHandler
 import scriptHandler
 import addonHandler
+from .interface import VirtualRevisionSettingsPanel
+
 addonHandler.initTranslation()
 
 try:
 	from globalCommands import SCRCAT_TEXTREVIEW
 except:
 	SCRCAT_TEXTREVIEW = None
+addonName = addonHandler.getCodeAddon().name
+config.conf.spec[addonName] = {
+	'UIAConsoleGrabbing': 'boolean(default=false)',
+}
+
 
 def obtainUWPWindowText():
 	foreground = api.getForegroundObject()
@@ -47,8 +57,14 @@ def obtainUWPWindowText():
 	return uwpTextList
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
 	scriptCategory = SCRCAT_TEXTREVIEW
+
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		VirtualRevisionSettingsPanel.addSettingsPanel()
+
+	def terminate(self):
+		VirtualRevisionSettingsPanel.removeSettingsPanel()
 
 	@scriptHandler.script(
 		# Translators: Message presented in input help mode.
