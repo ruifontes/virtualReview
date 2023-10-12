@@ -22,10 +22,14 @@ try:
 	from globalCommands import SCRCAT_TEXTREVIEW
 except:
 	SCRCAT_TEXTREVIEW = None
-addonName = addonHandler.getCodeAddon().name
-config.conf.spec[addonName] = {
+config.conf.spec[addonHandler.getCodeAddon().name] = {
 	'UIAConsoleGrabbing': 'boolean(default=false)',
 }
+
+TREE_SCOPE_CHILDREN = 0x2
+
+childrenCacheRequest = UIAHandler.handler.baseCacheRequest.clone()
+childrenCacheRequest.TreeScope |= TREE_SCOPE_CHILDREN
 
 
 def obtainUWPWindowText():
@@ -61,6 +65,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
+		self.config = config.conf[addonHandler.getCodeAddon().name]
 		VirtualRevisionSettingsPanel.addSettingsPanel()
 
 	def terminate(self):
@@ -96,6 +101,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				info.move(textInfos.UNIT_LINE, 0x7fffffff, endPoint="end")
 				text = info.clipboardText.replace("\0", " ")
 			if obj.windowClassName == u'ConsoleWindowClass':
+				if (
+					config.conf['UIA']['winConsoleImplementation'] != 'UIA'
+					and self.config['UIAConsoleGrabbing']
+				):
+					UIAElement = UIAHandler.handler.clientObject.ElementFromHandleBuildCache(
+						obj.windowHandle,
+						childrenCacheRequest,
+					).GetCachedChildren().GetElement(2)
+					obj = NVDAObjects.UIA.UIA(UIAElement=UIAElement)
 				info = obj.makeTextInfo(textInfos.POSITION_FIRST)
 				info.expand(textInfos.UNIT_STORY)
 				text = info.clipboardText.rstrip()
