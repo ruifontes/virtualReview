@@ -57,6 +57,5 @@ navigieren. Drücken Sie Escape, um das Fenster zu schließen.
 
 * Erste Version
 
-[[!tag dev stable]]
 
-[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.09.19/virtualRevision-2023.09.19.nvda-addon
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2024.01.07/virtualRevision-2024.01.07.nvda-addon

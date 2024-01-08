@@ -42,4 +42,4 @@ Windows的窗口虚拟化。但请注意，这只是为用户带来的便利，�
 
 * 初始版本
 
-[1]: https://github.com/ruifontes/virtualReview/releases/download/2023.09.19/virtualRevision-2023.09.19.nvda-addon
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2024.01.07/virtualRevision-2024.01.07.nvda-addon
