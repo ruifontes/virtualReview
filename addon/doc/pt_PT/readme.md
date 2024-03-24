@@ -56,4 +56,4 @@ virtual.
 
 * Lançamento inicial
 
-[1]: https://github.com/ruifontes/virtualReview/releases/download/2024.01.07/virtualRevision-2024.01.07.nvda-addon
+[1]: https://github.com/ruifontes/virtualReview/releases/download/2024.03.24/virtualRevision-2024.03.24.nvda-addon
