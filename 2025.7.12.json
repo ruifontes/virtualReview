@@ -3,13 +3,13 @@
 	"displayName": "Virtual Review",
 	"URL": "",
 	"description": "Provides a simple reviewable dialog of the text of the currently focused window.",
-	"sha256": "099f31bf82442b90c039f17cf04d6de4053027076cf94a9358835242c50b9e82",
+	"sha256": "d7068f21c1a092280a2972c7450a156954b98ce0098b33eaea249aa5c720913f",
 	"homepage": "https://github.com/ruifontes/virtualReview",
-	"addonVersionName": "2024.03.24",
+	"addonVersionName": "2025.07.12",
 	"addonVersionNumber": {
-		"major": 2024,
-		"minor": 3,
-		"patch": 24
+		"major": 2025,
+		"minor": 7,
+		"patch": 12
 	},
 	"minNVDAVersion": {
 		"major": 2019,
@@ -17,7 +17,7 @@
 		"patch": 0
 	},
 	"lastTestedVersion": {
-		"major": 2024,
+		"major": 2025,
 		"minor": 1,
 		"patch": 0
 	},

@@ -25,6 +25,11 @@ def obtainUWPWindowText():
 	curObject=foreground.firstChild
 	while curObject:
 		if curObject.name is not None: uwpTextList.append(curObject.name)
+		if hasattr(curObject, "UIAElement") and curObject.UIAElement and curObject.UIAElement.currentClassName == "TermControl":
+			info = curObject.makeTextInfo(textInfos.POSITION_FIRST)
+			info.expand(textInfos.UNIT_STORY)
+			text = info.clipboardText.rstrip()
+			uwpTextList.append(text)
 		if curObject.simpleFirstChild:
 			curObject=curObject.simpleFirstChild
 			continue
@@ -34,7 +39,7 @@ def obtainUWPWindowText():
 		if curObject.simpleParent:
 			parent=curObject.simpleParent
 			# As long as one is on current foreground object...
-			#Stay within the current top-level window.
+			# Stay within the current top-level window.
 			if parent.simpleParent == desktop:
 				break
 			while parent and not parent.simpleNext:
@@ -44,6 +49,11 @@ def obtainUWPWindowText():
 				curObject=parent.simpleNext
 			except AttributeError:
 				continue
+	if hasattr(foreground, "UIAElement") and foreground.UIAElement and foreground.UIAElement.currentClassName == "TermControl":
+		info = foreground.makeTextInfo(textInfos.POSITION_FIRST)
+		info.expand(textInfos.UNIT_STORY)
+		text = info.clipboardText.rstrip()
+		uwpTextList.append(text)
 	return uwpTextList
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -62,7 +72,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = None
 		obj = api.getFocusObject()
 		# Because it may take a while to iterate through elements, play abeep to alert users of this fact and the fact it's a UWP screen.
-		if obj.windowClassName.startswith("Windows.UI.Core"):
+		if obj.windowClassName.startswith(("Windows.UI.Core", "Windows.UI.Input.InputSite")):
 			import tones
 			tones.beep(400, 300)
 			text = "\n".join(obtainUWPWindowText())
@@ -94,7 +104,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translator: Message shown when no text can be virtualized.
 			ui.message(_("No text to display"))
 
-	#__gestures = {}
 
 # Avoid use on secure screens
 if globalVars.appArgs.secure:

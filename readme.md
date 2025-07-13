@@ -1,19 +1,22 @@
 # Virtual Review
 
 
-* Authors: Rui Batista and NVDA Addon Team
-* Download [stable version][1]
+
+* Authors: Rui Fontes, Rui Batista and NVDA Addon Team
+* Download [stable version](https://github.com/ruifontes/virtualReview/releases/download/2025.07.12/virtualRevision-2025.07.12.nvda-addon)
 * NVDA compatibility: 2019.3 and beyond
 
 This Addon allows NVDA users to review a Window content in a text box, similar to window virtualization of JAWS for Windows.
 Note, however, that this is just a convenience for users and does not replace NVDA's excellent review modes and object navigation support.
 
 
-## Usage ##
+
+## Usage
 
 Press NVDA+control+w to open the virtual revision Window.
 Then simply navigate the shown textbox as you do in any other text content.
 You can press Escape to close the virtual revision window.
+
 
 
 ## Changes for 3.0
@@ -55,5 +58,3 @@ You can press Escape to close the virtual revision window.
 ## Changes for 1.0
 
 * Initial Release
-
-[1]: https://github.com/ruifontes/virtualReview/releases/download/2024.03.24/virtualRevision-2024.03.24.nvda-addon

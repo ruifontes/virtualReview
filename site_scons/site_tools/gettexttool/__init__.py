@@ -24,8 +24,8 @@ def exists(env):
 
 XGETTEXT_COMMON_ARGS = (
 	"--msgid-bugs-address='$gettext_package_bugs_address' "
-	"--package-name='$gettext_package_name' "
-	"--package-version='$gettext_package_version' "
+	#"--package-name='$gettext_package_name' "
+	#"--package-version='$gettext_package_version' "
 	"--keyword=pgettext:1c,2 "
 	"-c -o $TARGET $SOURCES"
 )
